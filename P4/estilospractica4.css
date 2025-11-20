@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     text-align: center;
+    background-size: cover;
 }
 
 h1 {
