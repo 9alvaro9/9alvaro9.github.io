@@ -42,13 +42,9 @@ p {
 }
 
 #menu {
-  /*
-  Punto 1: Barra de menu siempre estara 
-  */
-  /* necesitas 3 instrucciones*/
-  /*1: */
-  /*2: */
-  /*3: */
+  position: fixed;
+  top: 0;
+  width: 90%;
   text-align: center;  
   background-color: #097054;
   border: 1px solid #FF9900;
@@ -61,30 +57,20 @@ p {
   text-decoration: none;
 }
 
-
 #menu li{
   display: inline;
   padding-left: 5px;  
 }
 
 #menu li a:hover{
-  /*
-  Punto 1: Los enlaces cambian de color de fondo y estan subrayados de color azul
-  */
-  /* necesitas 2 instrucciones*/
-  /*1: */
-  /*2: */
+  background-color: #FF9900; 
+  text-decoration: uderline;
 }
 
 #footer{
-  /*
-  Punto 6: Barra de pie de pagina siempre estara 
-  */
-  /* necesitas 3 instrucciones*/
-  /*1: */
-  /*2: */
-  /*3: */
-  
+  position: fixed;
+  width: 90%;
+  bottom:0;
   background-color: #097054;
   text-align: center;
   color: white;
@@ -102,50 +88,30 @@ p {
   background-color: white;
   text-decoration: none;
 }
+
 #image {
   text-align: right;
   margin-right: 60px;
 }
 
-
 #imageLeft {
- /*
-  Punto 2: La capa de las imagenes debe aparecer a la izquierda de la pantalla
- */
-
-  /* necesitas 1 instruccion*/
-  /*1: */
+  float: left;
   text-align: center;
   padding-bottom: 5px;
 }
 
 #imageRight {
- /*
-  Punto 2: La capa de las imagenes debe aparecer a la derecha de la pantalla
- */
-
-  /* necesitas 1 instruccion*/
-  /*1: */
+  float: right;
   text-align: center;
   padding-bottom: 5px;
 }
 
 #textMain {
-/*
-  Punto 3: Para que la capa de la imagen y el float NO sigan la dinamica de la seccion anterior hay que romperla
- */
-
-  /* necesitas 1 instruccion*/
-  /*1: */
+  clear: both;
 }
 
 #imageToHide {
- /*
-  Punto 3: La capa de las imagenes debe aparecer a la izquierda de la pantalla
- */
-
-  /* necesitas 1 instruccion*/
-  /*1: */  
+  float:left;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -155,15 +121,10 @@ p {
 }
 
 #cookieEU {
- /*
-  Punto 4: La capa esta posicionada casi al centro de la pantalla. Se diferencia del menu y del footer en que NO se queda fija al hacer scroll de la pagina.
- */
-
-  /* necesitas 4 instrucciones. 3 son distancia a los bordes :)*/
-  /*1: */  
-  /*2: */    
-  /*3: */    
-  /*4: */    
+  position: absolute;
+  left: 30%;
+  right: 30% ;
+  top: 150px;  
   border:2px solid red;
   background-color: white;
   margin-bottom: 5px;
@@ -172,14 +133,8 @@ p {
 }
 
 #textOverflow {
- /*
-  Punto 5: La capa tiene una barra de scroll vertical para que podamos leer el texto que no cabe en el tamaño. Solo vertical, no horizontal
- */
-
-  /* necesitas 2 instruccion*/
-  /*1: */  
-  /*2: */  
-  
+  overflow-x:hidden;
+  overflow-y: scroll;
   height: 250px;
   text-align: justify;
   border: 5px solid black;
@@ -214,21 +169,13 @@ p {
 
 @media all and (max-width: 500px) {
   #imageLeft {
-    /*
-    Punto 7.1: Barra de menu siempre estara 
-    */
-    /* necesitas 1 instruccion*/
-    /*1: */
+    float:none;
     text-align: center;
     padding-bottom: 5px;
   }
 
   #imageRight {
-    /*
-    Punto 7.1: Barra de menu siempre estara 
-    */
-    /* necesitas 1 instruccion*/
-    /*1: */
+    float:none;
     text-align: center;
     clear: both;
   padding-bottom: 5px;
@@ -239,12 +186,7 @@ p {
   }
   
   #imageToHide {
-    /*
-    Punto 7.2: Barra de menu siempre estara 
-    */
-    /* necesitas 1 instruccion*/
-    /*1: */
-
+    float:none;
     text-align: center;
     margin-bottom: 40px;
   }
